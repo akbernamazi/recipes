@@ -106,7 +106,7 @@ function performSearch(event) {
   // Send the request
 
   request = $.ajax({
-      url: "http://www.recipepuppy.com/api/",
+      url: "https://cors-anywhere.herokuapp.com/" + "http://www.recipepuppy.com/api/",
       type: "GET",
       data: { i: $("#ingredients").val(), q: $("#contains").val() }
   });
